@@ -16,6 +16,7 @@
 		<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
 		<script src="{{ url_for('static', filename='js/skel-layers.min.js') }}"></script>
 		<script src="{{ url_for('static', filename='js/init.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/skel.css') }}" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style-xlarge.css') }}" />
@@ -30,8 +31,8 @@
 		<header id="header">
 			<nav id="nav">
 				<ul>
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="search.html">Поиск</a></li>
+					<li><a href="/index">Главная</a></li>
+					<li><a href="/search">Поиск</a></li>
 					<!--li><a href="elements.html">Elements</a></li-->
 				</ul>
 			</nav>
@@ -41,7 +42,7 @@
 			<h2>Добро пожаловать на Neologismus!</h2>
 			<ul class="actions">
 				<li>
-					<a href="search.html" class="button big">Искать слова</a>
+					<a href="/search" class="button big">Искать слова</a>
 				</li>
 			</ul>
 		</section>
