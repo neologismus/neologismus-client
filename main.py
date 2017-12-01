@@ -24,12 +24,6 @@ def index():
 def search():
     return render_template('search.html')
 
-@app.route('/result1/', methods=['GET', 'POST'])
-def res1():
-    text = request.get_data().decode('utf-8')
-    render_template('result-search.html')
-    return text
-
 
 if __name__ == '__main__':
     app.run(port=getuid() + ADDITIVE_FOR_UID, debug=True)
