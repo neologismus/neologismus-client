@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Поиск</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/skel-layers.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/init.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/skel.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style-xlarge.css') }}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<nav id="nav">
+					<ul>
+						<li><a href="/index">Главная</a></li>
+						<li><a href="/search">Поиск</a></li>
+						<!--li><a href="elements.html">Elements</a></li-->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<header class="major">
+				<h2>NEOLOGISMUS</h2>
+			</header>
+			<div class="container">
+				<form method="get1" action="#">
+					<div class="row uniform 50%">
+						<div class="12u">
+							<h4>Если Вы ищете информацию по конкретному слову, воспользуйтесь поисковой строкой ниже:</h4>
+						</div>
+						<div class="6u">
+							<input type="text" id="word" value="" placeholder="Введите слово" />
+						</div>
+						<div class="3u">
+							<ul class="actions">
+								<li><input type="submit" id="search1" value="Поиск" /></li>
+								<li><input type="reset" value="Сбросить" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+				<div class="12u">
+					<h4>Расширенный поиск:</h4>
+				</div>
+				<form method="get2" action="#">
+					<div class="row uniform 50%">
+						<div class="8u">
+							<ul class="alt">
+								<li>
+									<div class="6u">
+									<div class="select-wrapper">
+										<select name="source" id="source">
+											<option value="">- Источник -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									</div>
+								</li>
+								<li>
+								<div class="row uniform 50%">
+									<h4>С</h4>
+									<div class="3u">
+									<input type="date" max="2000-01-01" min="2017-12-31" value="2000-01-01" id="startdate" />
+									</div>
+									<h4>По</h4>
+									<div class="3u">
+									<input type="date" max="2012-04-20" min="2017-12-31" value="2017-12-31" id="enddate"/>
+									</div>
+								</div>
+								</li>
+								<li>
+									<ul class="actions">
+										<li><input type="submit" id="search2" value="Поиск" /></li>
+										<li><input type="reset" value="Сбросить" /></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="4u">
+							<ul class="alt">
+								<li>
+									<input type="radio" id="priority-low" name="priority">
+									<label for="priority-low">Слабая фильтрация</label>
+								</li>
+								<li>
+									<input type="radio" id="priority-normal" name="priority" checked>
+									<label for="priority-normal">Средняя фильтрация</label>
+								</li>
+								<li>
+								<input type="radio" id="priority-high" name="priority">
+								<label for="priority-high">Жесткая фильтрация</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+						<!--div class="6u$ 12u$(small)">
+							<input type="checkbox" id="human" name="human" checked>
+							<label for="human">I am a human and not a robot</label>
+						</div-->
+				</form>
+			</div>
+		</section>
+
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; Neologismus 2017. All rights reserved.</li>
+					<li>By students of <a href="https://www.hse.ru/ma/ling/">CompLing HSE</a></li>
+				</ul>
+			</footer>
+
+	</body>
+</html>
